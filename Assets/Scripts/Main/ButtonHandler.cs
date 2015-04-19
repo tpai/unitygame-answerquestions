@@ -17,6 +17,8 @@ public class ButtonHandler : MonoBehaviour {
 
 	void Start () {
 		anim = GetComponent<Animator> ();
+		truth = 0;
+		lie = 0;
 	}
 
 	public void Label () {

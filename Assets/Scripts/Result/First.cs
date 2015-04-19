@@ -8,7 +8,7 @@ public class First : MonoBehaviour {
 
 	void Start () {
 		if (PlayerPrefs.GetInt ("Continue") >= 0) {
-			GetComponent<Text> ().text = (PlayerPrefs.GetInt ("Lie")>=1)?"Is that too hard to you?":"You can do fast.";
+			GetComponent<Text> ().text = (PlayerPrefs.GetInt ("Lie")>=1)?"Is that too hard to you?":"I think you can do fast.";
 			transform.Find ("Result").GetComponent<Text> ().text = 
 				"You spent " + PlayerPrefs.GetFloat ("CostTime").ToString("F0") + " seconds, and got " + PlayerPrefs.GetInt ("Truth") + " correct " + PlayerPrefs.GetInt ("Lie") + " wrong.";
 			if (PlayerPrefs.GetInt ("Continue") == 0) 

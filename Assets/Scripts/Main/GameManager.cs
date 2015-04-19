@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
 		yield return new WaitForSeconds (0f);
 
 		GameObject.Find ("RequireCoin").SendMessage("Init");
-		Debug.Log (PlayerPrefs.GetInt ("Continue"));
+
 		if (PlayerPrefs.GetInt ("Continue") == 0) {
 			StateChange ("GetReady");
 		} else if (PlayerPrefs.GetInt ("Continue") == 1) {
